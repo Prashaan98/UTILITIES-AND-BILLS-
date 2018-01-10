@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Property Tax</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "150px";
+            document.getElementById("main").style.marginLeft = "150px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+  </script>
+
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+          <a href= "javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="homepage 2.html">Home</a>
+          <a href="target setting.html">Utility Bills</a>
+          <a href="income tax.html">Income Tax</a>
+          <a href="propertytax1.html">Property Tax</a>
+          <a href="login page.html">Log Out</a>
+        </div>
+        <div id="main">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+      <div class="btn-group" style="width:100%">
+        <a href="Archive3.html" target="_self"><button style="width:50%">Archive</button></a>
+          <button style="width:50%">Property Tax</button>
+
+      </div>
+       <br>
+       <br>
+      <div class="container">
+
+         <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+         <fieldset>
+
+          <!-- Form Name -->
+        <legend>Property Tax</legend>
+
+          <!-- Text input-->
+  <div class="form-group">
+  <label class="control-label">Occupancy</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="occupancy" class="form-control selectpicker" >
+      <option value=" " >Please select your occupancy</option>
+      <option>Owner-occupied</option>
+      <option>Let-out</option>
+      <option >Vacant</option>
+    </select>
+  </div>
+  <br>
+  <br>
+
+<!-- Text input-->
+
+
+  <label class="control-label" >Annual Value</label> 
+    <div class="inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="annual_value" placeholder="Value" class="form-control"  type="text">
+
+    </div>
+  </div>
+</div>
+
+  <label class="control-label">Property</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="location" class="form-control selectpicker" >
+      <option value=" " >Please select property type</option>
+      <option>1-room flat</option>
+      <option>2-room flat</option>
+      <option >3-room flat</option>
+	  <option>4-room flat</option>
+	  <option>5-room flat</option>
+	  <option>Condominium</option>
+    </select>
+  </div>
+
+<!-- Text input-->
+  <label class="control-label">Location</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="location" class="form-control selectpicker" >
+      <option value=" " >Please select location</option>
+      <option>North</option>
+      <option>East</option>
+      <option >South</option>
+	  <option>West</option>
+    </select>
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4 ">
+    <button type="submit" class="btn btn-warning" onclick="alert('Submitted!')" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+</body>
+<style>
+.sidenav {
+    height: 50%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+      }
+
+      .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+    color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-right: 0;
+      }
+
+       #main {
+    transition: margin-left .5s;
+    padding: 0;
+      }
+@media screen and (max-width: 767px) {
+      .side {
+        height: auto;
+        padding: 15px;
+      }
+      .sidenav {
+          height: auto;
+          padding-top: 60px;
+      }
+      .sidenav a {
+          height:auto;
+          font-size: 15px;
+      }
+      .row.content {height:auto;}
+    }
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+
+
+</style>
